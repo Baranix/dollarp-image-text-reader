@@ -1,7 +1,7 @@
 from PIL import Image
 import numpy as np
 import dollarpy
-from itertools import count # izip for maximum efficiency
+from itertools import count
 
 _DIR_IMAGE = "img/"
 
@@ -39,7 +39,7 @@ recognizer = dollarpy.Recognizer([template_A])
 	Letter to be read.
 """
 
-read_letter = Image.open(_DIR_IMAGE + "A_comicsans.png")
+read_letter = Image.open(_DIR_IMAGE + "A_timesnewroman.png")
 read_pixels = np.asarray(read_letter)
 
 black_points = []
