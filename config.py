@@ -1,0 +1,1 @@
+_DIR_IMAGE = "img/"
